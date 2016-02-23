@@ -17,18 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKe-kx-csg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKe-kx-csg">
                                 <rect key="frame" x="256" y="178" width="88" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="Jl3-eI-QKJ"/>
+                                    <constraint firstAttribute="height" constant="35" id="Xql-2n-Prr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Jouer"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-0i-sSl">
-                                <rect key="frame" x="271" y="253" width="59" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-0i-sSl">
+                                <rect key="frame" x="277" y="253" width="47" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Crédit"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Where is Nicolas Cage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTT-Ic-sgF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is Nicolas Cage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTT-Ic-sgF">
                                 <rect key="frame" x="194" y="28" width="213" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BlK-GF-IhT"/>
+                                    <constraint firstAttribute="width" constant="213" id="JHy-oa-Vej"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,7 +47,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SKe-kx-csg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="178" id="Ilx-LY-uIU"/>
                             <constraint firstItem="pbb-0i-sSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JrR-0I-lON"/>
+                            <constraint firstItem="pTT-Ic-sgF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="PVS-h0-7Jg"/>
+                            <constraint firstItem="pbb-0i-sSl" firstAttribute="top" secondItem="SKe-kx-csg" secondAttribute="bottom" constant="40" id="bRb-5C-4cg"/>
                             <constraint firstItem="SKe-kx-csg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQT-mu-kfe"/>
                             <constraint firstItem="pTT-Ic-sgF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gPq-OG-GTg"/>
                         </constraints>
