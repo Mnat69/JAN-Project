@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func buttonJouer(sender: AnyObject) {
+        
     }
     
     override func viewDidLoad() {
