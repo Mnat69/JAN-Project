@@ -44,6 +44,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Jouer"/>
                                 <connections>
+                                    <action selector="Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LET-Cm-DW6"/>
                                     <segue destination="ygz-oS-uBI" kind="show" identifier="play" id="5SV-ZJ-6tm"/>
                                 </connections>
                             </button>
@@ -73,13 +74,26 @@
                         <viewControllerLayoutGuide type="bottom" id="dAM-qH-ThR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9kr-5w-VaD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nicolas-lvl-1" translatesAutoresizingMaskIntoConstraints="NO" id="3B0-GX-CzO">
+                                <rect key="frame" x="0.0" y="64" width="667" height="311"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3B0-GX-CzO" firstAttribute="top" secondItem="Z7o-49-X6q" secondAttribute="bottom" id="9lL-fR-gJV"/>
+                            <constraint firstItem="3B0-GX-CzO" firstAttribute="leading" secondItem="9kr-5w-VaD" secondAttribute="leading" id="I4h-1d-SkZ"/>
+                            <constraint firstAttribute="trailing" secondItem="3B0-GX-CzO" secondAttribute="trailing" id="ohH-H3-rIN"/>
+                            <constraint firstItem="3B0-GX-CzO" firstAttribute="bottom" secondItem="dAM-qH-ThR" secondAttribute="top" id="spC-MK-aRB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Deuxième Vue" id="IfN-b4-4ue">
                         <barButtonItem key="backBarButtonItem" title="Retour" id="kwD-i4-b0r"/>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8s-ut-WzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,4 +118,7 @@
             <point key="canvasLocation" x="565" y="490"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nicolas-lvl-1" width="1752" height="1168"/>
+    </resources>
 </document>

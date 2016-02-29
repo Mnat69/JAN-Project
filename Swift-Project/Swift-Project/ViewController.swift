@@ -20,6 +20,24 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func Play(sender: AnyObject) {
+        NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("popupResult"), userInfo: nil, repeats: false)
+    }
+    
+    func popupResult() {
+        let alert = UIAlertController(title: "Perdu", message: "Temps écoulé", preferredStyle: .Alert)
+        
+        let firstAction = UIAlertAction(title: "Accueil", style: .Default) {
+            (action) in
+            if let navController = self.navigationController{
+                navController.popViewControllerAnimated(true)
+            }
+            
+        }
+        
+        alert.addAction(firstAction)
+        presentViewController(alert, animated: true, completion:nil)
+    }
 
 }
 
