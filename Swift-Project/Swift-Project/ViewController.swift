@@ -14,14 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     @IBAction func Play(sender: AnyObject) {
-        NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("popupResult"), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(30.0, target: self, selector: Selector("popupResult"), userInfo: nil, repeats: false)
     }
     
     func popupResult() {
